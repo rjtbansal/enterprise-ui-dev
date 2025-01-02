@@ -1,6 +1,7 @@
 import { describe, expect, test } from 'vitest';
 
 describe('toBe', () => {
+  // got bit while solving a problem recently!! Always use toEqual if comparing objects
   test.fails('objects should not be strictly equal', () => {
     expect({ a: 1 }).toBe({ a: 1 });
   });
